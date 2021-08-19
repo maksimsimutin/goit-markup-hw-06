@@ -24,7 +24,6 @@
         <a class="logo-link" lang="en" href="#"><span class="logo-color">Web</span>Studio</a>
             <ul class="list-nav">
                 <li class="item">
-
                     <a class="navigation-link line logo-color" href="./index.html">Студия</a></li>
                 <li class="item"><a class="navigation-link" href="./portfolio.html">Портфолио</a></li>
                 <li class="item"><a class="navigation-link" href="#">Контакты</a></li>
@@ -33,13 +32,13 @@
             <ul class="contacts-list">
                 <li class="item">   
                     <a class="contacts-link" href="mailto:info@devstudio.com">
-                    <svg width="16" height="12" class="icon-mail">
+                    <svg width="16" height="12" class="nav-icon">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
                 </li>
                 <li class="item">
                     <a class="contacts-link" href="tel:+380961111111">
-                    <svg width="10" height="16" class="icon-phon">
+                    <svg width="10" height="16" class="nav-icon">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                     </svg> +38 096 111 11 11</a> 
                 </li>
@@ -426,6 +425,9 @@
                 </form>
             </div>
         </div>
+
+         <!--modal-->
+
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">   
             <button class="modal-close" type="button" data-modal-close >
@@ -465,8 +467,8 @@
                         ></use>
                       </svg>
                     </div>
-                  </div>
-                  <div class="modal-form-container">
+                </div>
+                <div class="modal-form-container">
                     <label for="mail" class="modal-label">Почта</label>
                     <div class="modal-box">
                       <input
@@ -482,15 +484,17 @@
                         ></use>
                       </svg>
                     </div>
-                  </div>
-                  <label for="modal-textarea" class="modal-label">Комментарий</label>
-                  <textarea
-                    class="modal-textarea"
-                    name="modal-textarea"
-                    id="modal-textarea"
-                    placeholder="Введите текст"
-                  ></textarea>
-                  <div class="conteiner-checkbox">
+                </div>
+                <div class="modal-form-container">
+                    <label for="modal-textarea" class="modal-label">Комментарий</label>
+                    <textarea
+                      class="modal-textarea"
+                      name="modal-textarea"
+                      id="modal-textarea"
+                      placeholder="Введите текст"
+                    ></textarea>
+                </div>
+                <div class="conteiner-checkbox">
                     <label class="checkbox-label">
                       <input
                         type="checkbox"
@@ -502,7 +506,7 @@
                       принимаю 
                       <a class="checkbox-link" href="#">Условия договора</a>
                     </label>
-                  </div>
+                </div>
                   <button type="submit" class="submit-btn">Отправить</button>
             </form>
             </div>
